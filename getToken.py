@@ -5,11 +5,10 @@ warnings.filterwarnings("ignore", message="Unverified HTTPS request ")
 #ipaddress = input("What is the SCI IP Address? ")
 #username = input("What is the username? ")
 #password = input("What is the password? ")
-ipaddress = "12.33.223.89"
+ipaddress = "your SCI ip address"
 
 url1 = "https://" + ipaddress + "/api/users/login"
-#params1 = {'username':username,'password':'##C@ndy4446##'} 
-params1 = {'username':'admin','password':'##C@ndy4446##'} 
+params1 = {'username':'admin','password':'password'} 
 
 r = requests.post(url1, json= params1,verify=False)
 

@@ -24,6 +24,6 @@ url2 = "https://" + ipaddress + "/api/reports/" + reportId + "/sections/" + sect
 params2 = {'limit': 100, 'start':'2020-10-18T15:36:06-07:00', 'end':'2020-10-19T15:36:06-07:00'}
 
 s = requests.post(url2, json=params2, verify=False)
-print "Unique clients : SSID" 
+print ("Unique clients : SSID") 
 for i in s.json()['data']:
-	print str(int(i['clientCount'])) + " : " + i['ssid']
+	print (str(int(i['clientCount'])) + " : " + i['ssid'])

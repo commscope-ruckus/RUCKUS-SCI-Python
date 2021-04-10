@@ -45,4 +45,4 @@ for i in range(0, len(s.json()['data']) - 1):
 	r = requests.post(url3, json=params3, verify=False)
 	hostname = r.json()['data'][0]['hostname']
 	clientIp = r.json()['data'][0]['clientIp']
-	print clientMac, clientTraffic, hostname, clientIp
+	print (clientMac, clientTraffic, hostname, clientIp)
